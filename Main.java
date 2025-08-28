@@ -1,4 +1,5 @@
 // import java.util.Arrays;
+import java.util.*;
 // import java.util.Scanner;
 // public class Main{
 //     public static void new_func(){
@@ -48,6 +49,19 @@
 
 //         // // substring
 //         // System.out.println(name.substring(0,3));
+//         we can pass any type of arguments without defining the datatype in the function defination by using object datatype because all the variables in java are objects.
+
+//         public static void main(String[] args) {
+//       String s = new String();
+//       s = "Abhinav";
+      
+//       print(s.substring(0,3));
+//       print(3);
+//     }
+    
+//     public static void print(Object n){
+//       System.out.println(n);
+//     }
 
 //         // if we don't initilize anything after we create the variables null values will initilize to them defaultly
 //         // Arrays
@@ -372,3 +386,137 @@
 
 //     }
 // }
+
+// array list
+
+// public class Main{
+//     public static void main(String[] args) {
+//       ArrayList<Integer> list1 = new ArrayList<>();
+      
+//       list1.add(10);
+//       list1.add(20);
+//       list1.add(30);
+//       list1.add(40);
+//       list1.add(50);
+//       list1.add(60);
+
+//       System.out.println(list1);
+//       int [] res = new int[list1.size()];
+      
+//       for(int i = 0 ; i < list1.size() ; i++){
+//         res[i] = list1.get(i);
+//         System.out.println(res[i]);
+//       }
+//   }
+// }
+
+// hashset (these are basically a set in python ,we can't store duplicates in hashset)
+
+// public class Main {
+//         public static void main(String[] args){
+//                 HashSet<Integer> h1 = new HashSet<>();
+//                 h1.add(1);
+//                 h1.add(1);
+
+//                 System.out.println(h1);
+//         }
+// }
+
+// public class Main {
+//         public static void main(String[] args){
+//                 HashMap<String,Integer> h1 = new HashMap<>();
+                
+//                 h1.put("abhinav", 1);
+//                 System.out.println(h1);
+//         }
+// }
+
+// finding  the frequency of characters in a string printing the frequecy of max ones
+// hashmap
+// public class Main {
+//         public static void main(String[] args) {
+//                 HashMap<Character,Integer> seen = new HashMap<>();
+//                 String name = "abhinav";
+                
+//                 for(int i = 0 ; i < name.length(); i++){
+//                         if(seen.containsKey(name.charAt(i))){
+//                                 seen.put(name.charAt(i),seen.get(name.charAt(i))+1);
+//                         }
+
+//                         else{
+//                                 seen.put(name.charAt(i),1);
+//                         }
+//                 }
+
+//                 System.out.println(seen.values()+""+seen.keySet());
+                
+//                 int max_val = Collections.max(seen.values());
+//                 for(Map.Entry<Character, Integer> entry : seen.entrySet()){
+//                         if(entry.getValue() == max_val){
+//                         System.out.println(entry.getKey());       
+//                         }
+//                 }
+//                 System.out.println(seen);
+//         }
+// }
+
+
+// Arraylist
+// public class Main {
+//         public static void main(String[] args) {
+                // ArrayList<Integer> arr = new ArrayList<>();
+                // Scanner ip = new Scanner(System.in);
+
+                // int tt = ip.nextInt();
+
+                // for(int i = 0 ; i < tt ; i++){
+                //         arr.add(ip.nextInt());
+                // }
+                // System.out.println(arr);
+                
+                // // sorting arrlist in ascending order
+                // Collections.sort(arr);
+                // System.out.println(arr);
+
+                // // sorting arrlist in descending order
+                // Collections.sort(arr,Collections.reverseOrder());
+                // System.out.println(arr);
+                
+                // sorting a array
+                // int[] arr = {56,-12,20};
+                // Arrays.sort(arr);
+
+                // for(int i = 0; i < arr.length ; i++){
+                //         System.out.println(arr[i]);
+                // }
+//         }
+// }
+
+// sorting a hashmap
+public class Main {
+
+        public static void main(String[] args) {
+                HashMap<Character,Integer> arr = new HashMap<>();
+                String name = "abhinav";
+                for(int i = 0;i < name.length(); i++){
+                        if(arr.containsKey(name.charAt(i))){
+                                arr.put(name.charAt(i), arr.get(name.charAt(i))+1);
+                        }
+                        else{
+                                arr.put(name.charAt(i),1);
+                        }
+                }
+                
+                System.out.println(arr);
+
+                // converting a int to String
+                // int num = 123;
+                // System.out.println(Integer.toString(num));
+
+                // // converting a string to int
+                // String num1 = "123";
+                // System.out.println(Integer.parseInt(num1));
+
+
+        }
+}

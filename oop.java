@@ -1,3 +1,4 @@
+// import java.util.*;
 // class Pen{
 //     String type;
 //     String color;
@@ -7,7 +8,6 @@
 //     }
 
 // }
-
 
 // class Student{
 //     String name;
@@ -217,7 +217,6 @@
 // }
 
 // Abstraction
-
 // abstract class Animal{
 //     abstract void walk();
 // }
@@ -268,7 +267,6 @@
 //         // new_ani.walk();
 //     }
 // }
-
 
 // class Animal{
 //     String name;
@@ -383,14 +381,126 @@
 //     }
 // }
 
-class A{
-    static{
-        System.out.print("a");
-    }
-}
+// class A{
+//     static{
+//         System.out.print("a");
+//     }
+// }
 
-class oop{
-    public static void main(String args[]){
-        System.out.println("s");
-    }
-}
+// class oop{
+//     public static void main(String args[]){
+//         System.out.println("s");
+//     }
+// }
+
+
+// class Parent{
+//     int a = 2;
+//     String name;
+//     static String new_name = "koklilamba";
+
+//     public void init(){
+//         System.out.println(this.name);
+//     }
+//     public static void in(){
+//         System.out.println(new_name);
+//     }
+// }
+
+// class Child extends Parent{
+//     int marks = 100;
+//     String name = "purnachandra rao";
+
+//     public void out(){
+//         System.out.println("this is single inherientence"+a);
+//     }
+// }
+// class Grand_child extends Child{
+//     public void marks(){
+//         System.out.println("this is multiple inherienternce"+marks);
+//     }
+// }
+
+// class Grand_son extends Parent{
+//     String gd_name = "Abhinav";
+//     public void out(){
+//         System.out.println("thisis hirircial inherientence"+name+gd_name);
+//     }
+// }
+// public class oop {
+//         public static void main(String[] args){
+//             Parent new_obj = new Parent();
+//             new_obj.name = "Ranga rao";
+            
+//             new_obj.init();
+//             new_obj.in();
+
+//             Child c_obj = new Child();
+//             c_obj.out();
+            
+//             Grand_child g_ogj = new Grand_child();
+//             g_ogj.marks();
+
+//             Grand_son gs_obj = new Grand_son();
+//             gs_obj.out();
+//         }
+// }
+
+// abstract class Parent {
+//     abstract void out();
+// }
+
+// class Child extends Parent{
+//     @Override
+//     public void out(){
+//         System.out.println("this is abstraction");
+//     }
+// }
+// public class oop {
+
+//     public static void main(String[] args) {
+//         Child obj = new Child();
+//         obj.out();
+
+//     }
+// }
+
+
+// interface Parent{
+//     int n1 = 0;
+// }
+
+// interface Child{
+//     int n2 = 1;
+// }
+
+// class Grand_child implements Parent , Child{
+//     public void out(){
+//         System.out.println(n1+" "+n2);
+//     } 
+// }
+// public class oop {
+//     public static void main(String[] args) {
+//         Grand_child obj = new Grand_child();
+//         obj.out();
+//     }
+// }
+
+// class Parent{
+//     String name;
+//     Parent(String name){
+//         this.name = name;
+// }
+// }
+// class Child extends Parent{
+//     int id;
+//     Child(String name,int id){
+//         super(name);
+//         this.id = id;
+//     }
+// }
+// public class oop {
+//     public static void main(String[] args) {
+//         Child obj = new Child("Abhinav",0);
+//     }
+// }
